@@ -1,11 +1,14 @@
 import './Expenses.css'
 import ExpenseItem  from "./ExpenseItem";
+import Card from  "./Card";
 
 function Expenses(props){
     return (
-        <div className="expenses">
-            <ExpenseItem expenseData={props}></ExpenseItem>
-        </div>
+        <Card className="expenses">
+            <div className="expenses">
+                <ExpenseItem expenseData={props}></ExpenseItem>
+            </div>
+        </Card>
     )
 }
 
